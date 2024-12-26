@@ -100,10 +100,6 @@ class Carousel {
         .slice(-this.size)
         .map((item) => item.cloneNode(true));
 
-    console.log(firstClones);
-    console.log(lastClones);
-
-
     firstClones.forEach((clone) => this.container.appendChild(clone));
     lastClones
         .reverse()
@@ -129,14 +125,6 @@ class Carousel {
       } else {
         dot.classList.remove('active');
       }
-    });
-
-    console.log({
-      currentIndex: this.currentIndex,
-      visibleItems: this.items
-          .slice(this.currentIndex, this.currentIndex + this.size)
-          .map((item) => item.textContent),
-      firstVisibleItemIndex: originalIndex,
     });
   }
 
