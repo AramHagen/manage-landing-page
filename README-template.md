@@ -8,6 +8,7 @@ This is a solution to the [Manage landing page challenge on Frontend Mentor](htt
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
   - [Links](#links)
+  - [Run Locally](#run-locally)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
