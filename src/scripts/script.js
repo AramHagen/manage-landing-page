@@ -72,7 +72,7 @@ class Carousel {
 
   adjustWidthsToItems() {
     this.itemWidth =
-        (this.container.clientWidth - this.gap * (this.size - 1)) / this.size;
+      (this.container.clientWidth - this.gap * (this.size - 1)) / this.size;
     [...this.items].forEach((item) => {
       item.style.flex = `0 0 ${this.itemWidth}px`;
       item.style.marginRight = `${this.gap}px`;
@@ -94,18 +94,18 @@ class Carousel {
   }
   cloneItems() {
     const firstClones = [...this.items]
-        .slice(0, this.size)
-        .map((item) => item.cloneNode(true));
+      .slice(0, this.size)
+      .map((item) => item.cloneNode(true));
     const lastClones = [...this.items]
-        .slice(-this.size)
-        .map((item) => item.cloneNode(true));
+      .slice(-this.size)
+      .map((item) => item.cloneNode(true));
 
     firstClones.forEach((clone) => this.container.appendChild(clone));
     lastClones
-        .reverse()
-        .forEach((clone) =>
-            this.container.insertBefore(clone, this.container.firstChild)
-        );
+      .reverse()
+      .forEach((clone) =>
+        this.container.insertBefore(clone, this.container.firstChild)
+      );
 
     this.items = Array.from(this.container.children);
     this.currentIndex = this.size; // Start at the first real item
@@ -117,7 +117,7 @@ class Carousel {
 
     // Calculate the index of the first visible item in the original list
     const originalIndex =
-        (this.currentIndex - this.size + this.totalItems) % this.totalItems;
+      (this.currentIndex - this.size + this.totalItems) % this.totalItems;
     // Update dots
     this.dots.forEach((dot, index) => {
       if (index === originalIndex) {
@@ -172,10 +172,10 @@ class Carousel {
   }
   addEventListeners() {
     const prevBtn = document.querySelector(
-        '.carousel_nav_item[data-dir="prev"]'
+      '.carousel_nav_item[data-dir="prev"]'
     );
     const nextBtn = document.querySelector(
-        '.carousel_nav_item[data-dir="next"]'
+      '.carousel_nav_item[data-dir="next"]'
     );
 
     let isAnimating = false;
@@ -207,8 +207,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const initializeCarousel = () => {
     const settings = window.matchMedia('(min-width: 976px)').matches
-        ? { size: 3, gap: 30}
-        : { size: 1, gap: 30};
+      ? { size: 3, gap: 30 }
+      : { size: 1, gap: 30 };
 
     new Carousel(carouselElement, settings);
   };
