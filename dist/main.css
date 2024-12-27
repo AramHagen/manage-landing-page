@@ -776,10 +776,6 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
 }
 
-.bg-\[url\(\'\.\/src\/assets\/images\/bg-simplify-section-mobile\.svg\'\)\] {
-  background-image: url('./src/assets/images/bg-simplify-section-mobile.svg');
-}
-
 .bg-\[url\(\'\/src\/assets\/images\/bg-simplify-section-mobile\.svg\'\)\] {
   background-image: url('/src/assets/images/bg-simplify-section-mobile.svg');
 }
@@ -1308,10 +1304,6 @@ body {
 
   .md\:bg-transparent {
     background-color: transparent;
-  }
-
-  .md\:bg-\[url\(\'\.\/src\/assets\/images\/bg-simplify-section-desktop\.svg\'\)\] {
-    background-image: url('./src/assets/images/bg-simplify-section-desktop.svg');
   }
 
   .md\:bg-\[url\(\'\/src\/assets\/images\/bg-simplify-section-desktop\.svg\'\)\] {
