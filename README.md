@@ -2,8 +2,6 @@
 
 This is a solution to the [Manage landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/manage-landing-page-SLXqC6P5). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-
-
 ## Table of contents
 
 - [Overview](#overview)
@@ -12,7 +10,6 @@ This is a solution to the [Manage landing page challenge on Frontend Mentor](htt
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-
 
 ## Overview
 
@@ -24,10 +21,10 @@ Users should be able to:
 
 ### Screenshot
 
-![](/images/desktop.png)
-![](/images/desktop-carousel.png)
-![](/images/mobile.png)
-![](/images/mobile-carousel.png)
+![](/src/assets//images/desktop.png)
+![](/src/assets/images/desktop-carousel.png)
+![](/src/assets/images/mobile.png)
+![](/src/assets/images/mobile-carousel.png)
 
 ### Links
 
@@ -64,13 +61,14 @@ Follow these steps to clone the project and run it on your local machine:
    ```bash
     npm run watch:css
    ```
-   
+
 5. **Start the Project with Live Server**
    Once the dependencies are installed and Tailwind is being built, you can run the project locally using live-server:
 
    ```bash
       npm start
    ```
+
 ## My process
 
 ### Built with

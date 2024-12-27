@@ -588,6 +588,10 @@ video {
   }
 }
 
+.visible {
+  visibility: visible;
+}
+
 .absolute {
   position: absolute;
 }
@@ -684,6 +688,14 @@ video {
   flex: 1 1 auto;
 }
 
+.transform {
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.resize {
+  resize: both;
+}
+
 .flex-row-reverse {
   flex-direction: row-reverse;
 }
@@ -756,12 +768,8 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
 }
 
-.bg-\[url\(\'\.\/images\/bg-simplify-section-mobile\.svg\'\)\] {
-  background-image: url('./images/bg-simplify-section-mobile.svg');
-}
-
-.bg-\[url\(\'\/images\/bg-simplify-section-mobile\.svg\'\)\] {
-  background-image: url('/images/bg-simplify-section-mobile.svg');
+.bg-\[url\(\'\.\/src\/assets\/images\/bg-simplify-section-mobile\.svg\'\)\] {
+  background-image: url('./src/assets/images/bg-simplify-section-mobile.svg');
 }
 
 .bg-no-repeat {
@@ -887,6 +895,11 @@ video {
   color: rgb(156 163 175 / var(--tw-placeholder-opacity, 1));
 }
 
+.blur {
+  --tw-blur: blur(8px);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
 .transition {
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
@@ -909,7 +922,7 @@ html {
 
 body {
   /*images/bg-tablet-pattern.svg"*/
-  background-image: url('/images/bg-tablet-pattern.svg');
+  background-image: url('/src/assets/images/bg-tablet-pattern.svg');
   background-repeat: no-repeat;
   background-size: 800px;
   background-position: calc(100% - -135px) -18%;
@@ -992,7 +1005,7 @@ body {
 }
 
 .container-bg {
-  background-image: url('/images/bg-tablet-pattern.svg');
+  background-image: url('/src/assets/images/bg-tablet-pattern.svg');
   background-repeat: no-repeat;
   background-size: 800px;
   background-position: -69% calc(100%);
@@ -1285,12 +1298,8 @@ body {
     background-color: transparent;
   }
 
-  .md\:bg-\[url\(\'\.\/images\/bg-simplify-section-desktop\.svg\'\)\] {
-    background-image: url('./images/bg-simplify-section-desktop.svg');
-  }
-
-  .md\:bg-\[url\(\'\/images\/bg-simplify-section-desktop\.svg\'\)\] {
-    background-image: url('/images/bg-simplify-section-desktop.svg');
+  .md\:bg-\[url\(\'\.\/src\/assets\/images\/bg-simplify-section-desktop\.svg\'\)\] {
+    background-image: url('./src/assets/images/bg-simplify-section-desktop.svg');
   }
 
   .md\:py-12 {
