@@ -614,11 +614,6 @@ video {
   margin-bottom: 0.25rem;
 }
 
-.my-16 {
-  margin-top: 4rem;
-  margin-bottom: 4rem;
-}
-
 .my-20 {
   margin-top: 5rem;
   margin-bottom: 5rem;
@@ -759,6 +754,10 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+}
+
+.bg-\[url\(\'\.\/images\/bg-simplify-section-mobile\.svg\'\)\] {
+  background-image: url('./images/bg-simplify-section-mobile.svg');
 }
 
 .bg-\[url\(\'\/images\/bg-simplify-section-mobile\.svg\'\)\] {
@@ -1060,17 +1059,17 @@ body {
   box-sizing: border-box;
 }
 
-.carousel_item img{
+.carousel_item img {
   border-radius: 50%;
-  margin:-3rem auto 0;
+  margin: -3rem auto 0;
 }
 
-.carousel_item h5{
-  padding: 1rem 0
+.carousel_item h5 {
+  padding: 1rem 0;
 }
 
-.carousel_item p{
-  line-height: 26px
+.carousel_item p {
+  line-height: 26px;
 }
 
 /*.carousel_item_active {*/
@@ -1128,12 +1127,12 @@ body {
   border-radius: 50%;
   cursor: pointer;
   display: inline-block;
-  border:1px solid hsl(12, 88%, 59%);
+  border: 1px solid hsl(12, 88%, 59%);
   background-color: white;
 }
 
 .dot.active {
-  background-color:hsl(12, 88%, 59%);
+  background-color: hsl(12, 88%, 59%);
 }
 
 .hover\:bg-brightRedLight:hover {
@@ -1284,6 +1283,10 @@ body {
 
   .md\:bg-transparent {
     background-color: transparent;
+  }
+
+  .md\:bg-\[url\(\'\.\/images\/bg-simplify-section-desktop\.svg\'\)\] {
+    background-image: url('./images/bg-simplify-section-desktop.svg');
   }
 
   .md\:bg-\[url\(\'\/images\/bg-simplify-section-desktop\.svg\'\)\] {

@@ -141,12 +141,16 @@ body {
   flex: 0 0 100%;
   box-sizing: border-box;
 }
-.carousel_item img{
+.carousel_item img {
   border-radius: 50%;
-  margin:-3rem auto 0;
+  margin: -3rem auto 0;
 }
-.carousel_item h5{padding: 1rem 0}
-.carousel_item p{line-height: 26px}
+.carousel_item h5 {
+  padding: 1rem 0;
+}
+.carousel_item p {
+  line-height: 26px;
+}
 /*.carousel_item_active {*/
 /*  background-color: #fff;*/
 /*  top: -1rem;*/
@@ -195,10 +199,10 @@ body {
   border-radius: 50%;
   cursor: pointer;
   display: inline-block;
-  border:1px solid hsl(12, 88%, 59%);
+  border: 1px solid hsl(12, 88%, 59%);
   background-color: white;
 }
 
 .dot.active {
-  background-color:hsl(12, 88%, 59%);
+  background-color: hsl(12, 88%, 59%);
 }
